@@ -14,7 +14,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <Header />
-      <Script>{`
+      {/* <Script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></Script> */}
+      <Script id="my-script" defer>{`
       var typed = new Typed(".autoinput",{
         strings: ["I'm <span id='ogi'>Ogi</span> Darma Tena"],
         typeSpeed: 140,      
