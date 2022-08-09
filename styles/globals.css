@@ -614,9 +614,9 @@ p {
 @media (max-width: 1190px) {
   .pendidik-container {
     width: 100%;
-    height: 90vh !important;
+    height: 90vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
 
@@ -650,9 +650,9 @@ p {
 @media (max-width: 970px) {
   .pendidik-container {
     width: 100%;
-    height: 80vh !important;
+    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
   #main {
@@ -689,9 +689,9 @@ p {
 @media (max-width: 900px) {
   .pendidik-container {
     width: 100%;
-    height: 60vh !important;
+    height: 60vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
   .pendidik-overlay-text h1 {
@@ -859,9 +859,9 @@ p {
 @media (max-width: 400px) {
   .pendidik-container {
     width: 100%;
-    height: 110vh !important;
+    height: 110vh;
     display: grid;
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
   .s-box {
