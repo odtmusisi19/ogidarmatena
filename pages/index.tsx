@@ -13,14 +13,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <Header />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" async></script>
       <Script id="my-script" async>{`
+      $(document).ready(function() {
+        $(".logo").click(function() {
+          $( "ul li" ).slideToggle( "slow");
+          
+        });
+          });
+
       var typed = new Typed(".autoinput",{
         strings: ["I'm <span id='ogi'>Ogi</span> Darma Tena"],
         typeSpeed: 140,      
       //  backSpeed: 140,
       //  loop:true
       });
+
+      
       `}</Script>
     </div>
   );
