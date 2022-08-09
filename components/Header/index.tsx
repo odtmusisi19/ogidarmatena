@@ -2,8 +2,26 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
+    //Pop Up
     <div>
       <section id="main">
+        <div>
+          <div id="closed"></div>
+          <div className="popup-wrapper" id="popup">
+            <div className="popup-container">
+              <div>
+                <div className="isi">
+                  <h1>Indonesia</h1>
+                  <p>+6287763307839</p>
+                </div>
+                <a className="popup-close" href="#closed">
+                  X
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end Pop Up */}
         <nav>
           <a href="#" className="logo">
             OGI
@@ -26,21 +44,18 @@ export default function Header() {
               <a href="#contact-form">Contact</a>
             </li> */}
           </ul>
-          <a href="#" className="lang">
+          <a href="#popup" className="lang">
             ID
           </a>
         </nav>
       </section>
+      {/* Pop Up */}
 
       <div className="name">
         <p>Hello</p>
         <h1 className="autoinput"></h1>
         <p className="details">In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this</p>
-        <a
-          href="https://doc-0c-88-docs.googleusercontent.com/docs/securesc/0e69jbs2g0vnmme8esbkmva5oat57mks/inhmkk8ivndn8r9f9n4prjn3tnqng1uo/1660034625000/14457739025455370513/14457739025455370513/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i?e=download&ax=AI9vYm4zqdUJ5sbqbhyVXtWvdA5hCtWPI8xJWV9JorYCU5GjespPwvodzkW8ioh4yEMGAXDM9hf60IHuDZYaWyEm9uRRW7tG0fouExablb8aSxqG7v5wueJr-oZBBa_MMlG07wJI_3JQcaj5eN6Jq4Y1VIBfn1gOpUMlpA2lGSnJq2U4aL6ZjZi6KNeHsumhvFPJ27Zoc7Pl8qzUgtFuvHRppvh6F-Xk6pRA2ugC9Serlr_6gHdWgrQPSKs6ITvHDfwX0fQFAaxX3rHPYkxKesWQxG6-yjfhs267YI-Q60RmB7jRmXr4sNUPkcyWOcX-2pc_qYpi6Amm2K73Fq5eKK_N6KBrAUlbHAUs5NubX-Yf_LfgfBaEjhq5lGbO6YITEGBs5VS9VXszgAuSo22-tJQPlCbQ5HUeO8zhRmVZSK-NM2y9h7Nmv58lj-Jg5yg-fFaKm0t3SwMvCr2aECg9YfnPcZLMfaJkLjXF1y3IBT_cbi5yf-X0JpBsP8Ff3tk5QJYr3dovKVOJZlVCDNBHAFCBztpecBP7Z53_nAg9FRcT37rwbhT70Gh-QfNBBmwNGpxeugWUI0DNO1prUP5CmLA18YZ1DSbGmmGW2Q9mGBCVOgKKSGeZxcHNzT1I-NcCmoiPSl38J_aLMo9aLqADkq4ZZjsrY36S2_jC1nc7BTzttYINbV3TBdEI69q2h7_H4EJNFTeYFTx1QRmoK94wgzaxXD1apCw-WQKU948dI1CTW1dduZTzCRPyu4k&uuid=232bd988-9594-4d2a-b04f-4e5aa804029a&authuser=0&nonce=80senh3lcob9u&user=14457739025455370513&hash=of87ontcu2bd5tco5j55a3g7v9o4628r"
-          download
-          className="cv-btn"
-        >
+        <a href="" download className="cv-btn">
           Download Cv
         </a>
       </div>
@@ -189,7 +204,7 @@ export default function Header() {
 
       <section id="contact-btn">
         <h1 className="c-b-heading">If You Have Any Project In Your Mind ?</h1>
-        <button>Contact Me</button>
+        <a href="https://api.whatsapp.com/send/?phone=087763307839&text=hay%20Ogi%20darma%20tena%20saya%20butuh%20bantuan&type=phone_number&app_absent=0">Contact Me</a>
       </section>
 
       <section id="contact-form">
@@ -216,6 +231,8 @@ export default function Header() {
           </div>
         </form>
       </section>
+
+      {/* end Pop Up */}
     </div>
   );
 }

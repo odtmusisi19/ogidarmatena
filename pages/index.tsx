@@ -12,6 +12,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" async></script>
         <link rel="icon" href="/logo.ico" />
+        <link rel="stylesheet" type="text/css" href="/public/css/demo.css"></link>
       </Head>
       <Header />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
