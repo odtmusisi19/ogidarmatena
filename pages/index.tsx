@@ -8,6 +8,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Ogi Darma Tena | Web</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" async></script>
         <link rel="icon" href="/logo.ico" />
