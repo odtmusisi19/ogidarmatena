@@ -58,10 +58,7 @@ export default function Header() {
         <div className="abouttext">
           <h1>About Me</h1>
           <h2>FreeLancing FrontEnd Developer</h2>
-          <p>
-            Enjoy the ultimate web design editor. Divi is like Photoshop or Sketch for the web. It brings an advanced design interface to WordPress that both beginners and experts will fall in love with. It's incredibly smart, super
-            flexible, amazingly powerful and visual by nature. This is how designing for the web is meant to be done.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores pariatur voluptatum amet ipsam dolore commodi itaque illo, tempora soluta!</p>
           <button>View More Details</button>
         </div>
         <div className="about-model">
