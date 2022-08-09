@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-
+import Image from 'next/image';
 export default function Header() {
   return (
     <div>
@@ -42,16 +42,16 @@ export default function Header() {
       </div>
       <div className="black-line"></div>
       <div className="social">
-        <a target="_blank" href="https://www.facebook.com/ogidarmatena.tena/">
+        <a href="https://www.facebook.com/ogidarmatena.tena/">
           <i className="fab fa-facebook-f"></i>
         </a>
-        <a target="_blank" href="https://twitter.com/OgiTena">
+        <a href="https://twitter.com/OgiTena">
           <i className="fab fa-twitter"></i>
         </a>
-        <a target="_blank" href="https://www.instagram.com/ogidarmatena/">
+        <a href="https://www.instagram.com/ogidarmatena/">
           <i className="fab fa-instagram"></i>
         </a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC4EbvULdSkf6HS7_FlGP_Dg">
+        <a href="https://www.youtube.com/channel/UC4EbvULdSkf6HS7_FlGP_Dg">
           <i className="fab fa-youtube"></i>
         </a>
       </div>
