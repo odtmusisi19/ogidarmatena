@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 export default function Header() {
   return (
     <div>
@@ -65,6 +66,39 @@ export default function Header() {
           <img alt="model" src="images/about-model.png" />
         </div>
       </section>
+      <section id="pendidikan">
+        <h1 className="pendidik-headind">Pendidikan</h1>
+        <div className="pendidik-container">
+          <div className="pendidik-box">
+            <div className="pendidik-overlay-text">
+              <h1>SDN 2 Tegal Maja</h1>
+              <p>Client Project</p>
+            </div>
+            <img src="images/pendidikan/sd.png" />
+          </div>
+          <div className="pendidik-box">
+            <div className="pendidik-overlay-text">
+              <h1>SMPN 4 Tanjung</h1>
+              <p>Client Project</p>
+            </div>
+            <img src="images/pendidikan/smp.png" />
+          </div>
+          <div className="pendidik-box">
+            <div className="pendidik-overlay-text">
+              <h1>SMAN 1 Tanjung</h1>
+              <p>Client Project</p>
+            </div>
+            <img src="images/pendidikan/sma.png" />
+          </div>
+          <div className="pendidik-box">
+            <div className="pendidik-overlay-text">
+              <h1>UBG Mataram</h1>
+              <p>Client Project</p>
+            </div>
+            <img src="images/pendidikan/ubg.png" />
+          </div>
+        </div>
+      </section>
       <section id="services">
         <div className="s-heading">
           <h1>Services</h1>
@@ -100,6 +134,7 @@ export default function Header() {
           </div>
         </div>
       </section>
+      {/* Portofolio=============================================== */}
       <section id="portfolio">
         <h1 className="p-headind">Portfolio</h1>
         <div className="p-container">

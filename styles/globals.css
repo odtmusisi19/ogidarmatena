@@ -207,8 +207,85 @@ h2 {
   background-color: #ffffff;
   transition: all ease 0.3s;
 }
+/* Pendidikan */
+#pendidikan {
+  border-bottom: 5px solid #151515;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: calibri;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 2% 20px 2%;
+}
 
-/* service*/
+.pendidik-headind {
+  font-family: calibri;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px 20px;
+  background-color: #292929;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+.pendidik-box {
+  background-color: #1f1f1f;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.pendidik-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pendidik-container {
+  width: 90%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+.pendidik-overlay-text {
+  font-family: calibri;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(34, 37, 37, 0.8);
+  display: none;
+}
+.pendidik-overlay-text h1,
+p {
+  color: #ffffff;
+}
+.pendidik-overlay-text h1 {
+  font-size: 2.2rem;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 2px;
+}
+.pendidik-overlay-text p {
+  font-size: 1.2rem;
+  margin: 0px;
+}
+.pendidik-box:hover .pendidik-overlay-text {
+  display: flex;
+}
+/* end Pendidikan */
+
+/*============================= service=============*/
 #services {
   width: 100%;
   height: 100vh;
@@ -222,13 +299,13 @@ h2 {
 }
 
 .s-heading h1 {
-  color: #ffffff;
+  color: #1b1b1b;
   font-size: 3rem;
   margin: 0px;
   padding: 0px;
 }
 .s-heading p {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   margin: 0px;
   padding: 0px;
@@ -302,7 +379,7 @@ h2 {
   transform: translateY(-10px);
   transition: all ease 0.3s;
 }
-/*  */
+/*================== Portofolio =======================*/
 #portfolio {
   width: 100%;
   box-sizing: border-box;
@@ -377,6 +454,8 @@ p {
 .p-box:hover .overlay-text {
   display: flex;
 }
+
+/* ==================== Contact ======================== */
 #contact-btn {
   width: 100%;
   display: flex;
@@ -589,6 +668,20 @@ p {
   }
 }
 @media (max-width: 900px) {
+  .pendidik-container {
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+  .pendidik-overlay-text h1 {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+  }
   .toggle {
     display: block;
   }
@@ -703,6 +796,27 @@ p {
 }
 
 @media (max-width: 600px) {
+  .pendidik-container {
+    width: 100%;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .pendidik-overlay-text h1 {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+  }
+  .pendidik-box {
+    background-color: white;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+  }
+  .pendidik-box img {
+    width: 100%;
+    height: 100%;
+  }
   .p-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
