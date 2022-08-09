@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <Header />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" async></script>
       <Script id="my-script" async>{`
       $(document).ready(function() {
