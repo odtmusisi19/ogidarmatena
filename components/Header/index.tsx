@@ -55,7 +55,7 @@ export default function Header() {
         <p>Hello</p>
         <h1 className="autoinput"></h1>
         <p className="details">In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this</p>
-        <a href="" download className="cv-btn">
+        <a href="https://drive.google.com/file/d/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i/view" className="cv-btn">
           Download Cv
         </a>
       </div>
@@ -90,7 +90,7 @@ export default function Header() {
         <div className="pendidik-container">
           <div className="pendidik-box">
             <div className="pendidik-overlay-text">
-              <h1>SDN 2 Tegal Maja</h1>
+              <h1>SD 2 Tegal Maja</h1>
               <p>Client Project</p>
             </div>
             <img src="images/pendidikan/sd.png" />

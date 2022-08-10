@@ -766,7 +766,7 @@ p {
     /* background-image: none !important; */
     background-image: url('/images/bg.png');
     /* background-size: auto; */
-    background-position: 70% 100%;
+    background-position: 78% 100%;
     /* position: relative;
     left: 40%; */
   }
@@ -802,7 +802,7 @@ p {
     grid-gap: 10px;
   }
   .pendidik-overlay-text h1 {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
     margin: 0px;
     padding: 0px;
     letter-spacing: 2px;
