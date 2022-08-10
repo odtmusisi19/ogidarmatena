@@ -26,7 +26,9 @@ const Main = (props: any) => {
               <div>
                 <div className="isi">
                   <h1>Indonesia</h1>
-                  <p>+6287763307839</p>
+                  <p>
+                    <i className="fab fa-whatsapp"></i>+6287763307839
+                  </p>
                 </div>
                 <a className="popup-close" href="#closed">
                   X

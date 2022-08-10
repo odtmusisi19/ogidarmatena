@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" async></script>
         {/* aktifkan jika ingin menggunakakn smooth scroll */}
-        {/* <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script> */}
+        <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
         <link rel="icon" href="/logo.ico" />
         <link rel="stylesheet" type="text/css" href="/public/css/demo.css"></link>
       </Head>
@@ -23,14 +23,14 @@ const Home: NextPage = () => {
       <Script id="my-script" async>{`
 
       //aktifkan luxy.init() jika ingin menggunakan smooth Scrool akan tetapi scroll into view akan tidak berfungsi
-      // luxy.init();
+       luxy.init();
       $(document).ready(function() {
         $(".logo").click(function() {
           $( "ul li" ).slideToggle( "slow");
           
         });
           });
-
+          
       var typed = new Typed(".autoinput",{
         strings: ["I'm <span id='ogi'>Ogi</span> Darma Tena"],
         typeSpeed: 140,      

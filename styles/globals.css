@@ -10,6 +10,23 @@ body {
 .isi {
   text-align: center;
 }
+/* #no-hp {
+  color: white;
+  display: inline;
+  animation: nomor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes nomor {
+  50% {
+    color: #1ed98b;
+  }
+} */
+
+.fa-whatsapp {
+  color: #1ed98b;
+  font-size: 160%;
+}
 a.popup-link {
   padding: 17px 0;
   text-align: center;
