@@ -802,7 +802,7 @@ p {
     grid-gap: 10px;
   }
   .pendidik-overlay-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     margin: 0px;
     padding: 0px;
     letter-spacing: 2px;
