@@ -8,16 +8,19 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Ogi Darma Tena | Web</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" async></script>
+        <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
         <link rel="icon" href="/logo.ico" />
         <link rel="stylesheet" type="text/css" href="/public/css/demo.css"></link>
       </Head>
-      <Header />
+      <div id="luxy">
+        <Header />
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" async></script>
       <Script id="my-script" async>{`
+      luxy.init();
       $(document).ready(function() {
         $(".logo").click(function() {
           $( "ul li" ).slideToggle( "slow");

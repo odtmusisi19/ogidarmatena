@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 export default function Header() {
   return (
     //Pop Up
-    <div>
+    <div data-horizontal="1" data-speed-x="-5">
       <section id="main">
         <div>
           <div id="closed"></div>
@@ -48,32 +46,32 @@ export default function Header() {
             ID
           </a>
         </nav>
+        <div className="name">
+          <p>Hello</p>
+          <h1 className="autoinput"></h1>
+          <p className="details">In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this</p>
+          <a href="https://drive.google.com/file/d/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i/view" className="cv-btn">
+            Download Cv
+          </a>
+        </div>
+        <div className="black-line"></div>
+        <div className="social">
+          <a href="https://www.facebook.com/ogidarmatena.tena/">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/OgiTena">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/ogidarmatena/">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UC4EbvULdSkf6HS7_FlGP_Dg">
+            <i className="fab fa-youtube"></i>
+          </a>
+        </div>
       </section>
       {/* Pop Up */}
 
-      <div className="name">
-        <p>Hello</p>
-        <h1 className="autoinput"></h1>
-        <p className="details">In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this</p>
-        <a href="https://drive.google.com/file/d/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i/view" className="cv-btn">
-          Download Cv
-        </a>
-      </div>
-      <div className="black-line"></div>
-      <div className="social">
-        <a href="https://www.facebook.com/ogidarmatena.tena/">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/OgiTena">
-          <i className="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/ogidarmatena/">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UC4EbvULdSkf6HS7_FlGP_Dg">
-          <i className="fab fa-youtube"></i>
-        </a>
-      </div>
       <section id="about">
         <div className="abouttext">
           <h1>About Me</h1>
