@@ -1,7 +1,23 @@
+import { clear } from 'console';
+import React from 'react';
+const onContentIndexClick = (value: any) => {
+  const element = document.getElementById(`content${value}`)?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+};
 export default function Header() {
   return (
-    //Pop Up
     <div data-horizontal="1" data-speed-x="-5">
+      <Main id={0} />
+      <About id={1} />
+      <Service id={2} />
+      <Portfolio id={3} />
+      <Contact id={4} />
+    </div>
+  );
+}
+// ========================================================================================================
+const Main = (props: any) => {
+  return (
+    <div id={`content${props.id}`}>
       <section id="main">
         <div>
           <div id="closed"></div>
@@ -27,16 +43,16 @@ export default function Header() {
           {/* <div className="toggle"></div> */}
           <ul className="menu">
             <li className="">
-              <a href="#main">Home</a>
+              <a onClick={() => onContentIndexClick(0)}>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a onClick={() => onContentIndexClick(1)}>About</a>
             </li>
             <li>
-              <a href="#services">Hobi</a>
+              <a onClick={() => onContentIndexClick(2)}>Hobi</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a onClick={() => onContentIndexClick(3)}>Portfolio</a>
             </li>
             {/* <li>
               <a href="#contact-form">Contact</a>
@@ -70,23 +86,27 @@ export default function Header() {
           </a>
         </div>
       </section>
-      {/* Pop Up */}
-
+    </div>
+  );
+};
+const About = (props: any) => {
+  return (
+    <div id={`content${props.id}`}>
       <section id="about">
-        <div className="abouttext">
+        <div className="abouttext luxy-el" data-speed-y="5" data-offset="-120">
           <h1>About Me</h1>
           <h2>FreeLancing FrontEnd Developer</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores pariatur voluptatum amet ipsam dolore commodi itaque illo, tempora soluta!</p>
           <button>View More Details</button>
         </div>
-        <div className="about-model">
+        <div className="about-model luxy-el" data-speed-y="5" data-offset="-120">
           <img alt="model" src="images/about-model.png" />
         </div>
       </section>
       <section id="pendidikan">
         <h1 className="pendidik-headind">Pendidikan</h1>
-        <div className="pendidik-container">
-          <div className="pendidik-box">
+        <div className="pendidik-container ">
+          <div className="pendidik-box ">
             <div className="pendidik-overlay-text">
               <h1>SD 2 Tegal Maja</h1>
               <p>Client Project</p>
@@ -116,6 +136,12 @@ export default function Header() {
           </div>
         </div>
       </section>
+    </div>
+  );
+};
+const Service = (props: any) => {
+  return (
+    <div id={`content${props.id}`}>
       <section id="services">
         <div className="s-heading">
           <h1>Services</h1>
@@ -152,6 +178,13 @@ export default function Header() {
         </div>
       </section>
       {/* Portofolio=============================================== */}
+    </div>
+  );
+};
+
+const Portfolio = (props: any) => {
+  return (
+    <div id={`content${props.id}`}>
       <section id="portfolio">
         <h1 className="p-headind">Portfolio</h1>
         <div className="p-container">
@@ -199,7 +232,14 @@ export default function Header() {
           </div>
         </div>
       </section>
+      ;
+    </div>
+  );
+};
 
+const Contact = (props: any) => {
+  return (
+    <div id={`content${props.id}`}>
       <section id="contact-btn">
         <h1 className="c-b-heading">If You Have Any Project In Your Mind ?</h1>
         <a href="https://api.whatsapp.com/send/?phone=087763307839&text=hay%20Ogi%20darma%20tena%20saya%20butuh%20bantuan&type=phone_number&app_absent=0">Contact Me</a>
@@ -229,8 +269,6 @@ export default function Header() {
           </div>
         </form>
       </section>
-
-      {/* end Pop Up */}
     </div>
   );
-}
+};
