@@ -1,5 +1,5 @@
-import { clear } from 'console';
 import React from 'react';
+
 const onContentIndexClick = (value: any) => {
   const element = document.getElementById(`content${value}`)?.scrollIntoView({ behavior: 'smooth', block: 'end' });
 };
@@ -18,7 +18,7 @@ export default function Header() {
 const Main = (props: any) => {
   return (
     <div id={`content${props.id}`}>
-      <section id="main">
+      <section id="main" data-aos="fade" data-aos-delay="0" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
         <div>
           <div id="closed"></div>
           <div className="popup-wrapper" id="popup">
@@ -67,8 +67,19 @@ const Main = (props: any) => {
         <div className="name">
           <p>Hello</p>
           <h1 className="autoinput"></h1>
-          <p className="details">In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this</p>
-          <a href="https://drive.google.com/file/d/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i/view" className="cv-btn">
+          <p className="details" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="true">
+            In this Video I am gonna show you how to create a personal website with all pages.After Watching this tutorial you will be able to craete website like this
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1FbZq9Ovr8L2hvG5vQ3c9wjNnUZ2Thr9i/view"
+            className="cv-btn"
+            data-aos-delay="450"
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
             Download Cv
           </a>
         </div>
@@ -95,41 +106,41 @@ const About = (props: any) => {
   return (
     <div id={`content${props.id}`}>
       <section id="about">
-        <div className="abouttext luxy-el" data-speed-y="5" data-offset="-120">
+        <div className="abouttext luxy-el" data-speed-y="5" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
           <h1>About Me</h1>
           <h2>FreeLancing FrontEnd Developer</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores pariatur voluptatum amet ipsam dolore commodi itaque illo, tempora soluta!</p>
           <button>View More Details</button>
         </div>
-        <div className="about-model luxy-el" data-speed-y="5" data-offset="-120">
+        <div className="about-model luxy-el" data-aos="fade-left" data-aos-delay="0" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
           <img alt="model" src="images/about-model.png" />
         </div>
       </section>
       <section id="pendidikan">
         <h1 className="pendidik-headind">Pendidikan</h1>
         <div className="pendidik-container ">
-          <div className="pendidik-box ">
+          <div className="pendidik-box " data-aos="fade-up" data-aos-delay="0" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className="pendidik-overlay-text">
               <h1>SD 2 Tegal Maja</h1>
               <p>Client Project</p>
             </div>
             <img src="images/pendidikan/sd.png" />
           </div>
-          <div className="pendidik-box">
+          <div className="pendidik-box" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className="pendidik-overlay-text">
               <h1>SMPN 4 Tanjung</h1>
               <p>Client Project</p>
             </div>
             <img src="images/pendidikan/smp.png" />
           </div>
-          <div className="pendidik-box">
+          <div className="pendidik-box" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className="pendidik-overlay-text">
               <h1>SMAN 1 Tanjung</h1>
               <p>Client Project</p>
             </div>
             <img src="images/pendidikan/sma.png" />
           </div>
-          <div className="pendidik-box">
+          <div className="pendidik-box" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className="pendidik-overlay-text">
               <h1>UBG Mataram</h1>
               <p>Client Project</p>
@@ -149,7 +160,7 @@ const Service = (props: any) => {
           <h1>Services</h1>
           <p>Here Is The Some Servies Which We Provide You.</p>
         </div>
-        <div className="b-container">
+        <div className="b-container" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="0" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="true">
           <div className="s-box">
             <div className="s-b-img">
               <div className="s-type">Front-End</div>
