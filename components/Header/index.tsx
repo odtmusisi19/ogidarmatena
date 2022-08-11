@@ -179,7 +179,6 @@ const Service = (props: any) => {
           </div>
         </div>
       </section>
-      {/* Portofolio=============================================== */}
     </div>
   );
 };
@@ -244,10 +243,10 @@ const Contact = (props: any) => {
     <div id={`content${props.id}`}>
       <section id="contact-btn">
         <h1 className="c-b-heading">If You Have Any Project In Your Mind ?</h1>
-        <a href="https://api.whatsapp.com/send/?phone=087763307839&text=hay%20Ogi%20darma%20tena%20saya%20butuh%20bantuan&type=phone_number&app_absent=0">Contact Me</a>
+        <a href="mailto:ogidarmatena@gmail.com?subject=Project&body=Hay Ogi, Saya Membutuhkan Bantuanmu. Apakah kamu Bisa Membantu saya">Contact Me</a>
       </section>
 
-      <section id="contact-form">
+      {/* <section id="contact-form">
         <form>
           <div className="contact-left">
             <h1 className="c-l-heading">
@@ -270,7 +269,7 @@ const Contact = (props: any) => {
             <button>submit</button>
           </div>
         </form>
-      </section>
+      </section> */}
     </div>
   );
 };
