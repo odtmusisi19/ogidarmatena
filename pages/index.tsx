@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <div id="luxy">
         <Header />
       </div>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" async></script>
       <Script id="my-script" async>{`
