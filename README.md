@@ -6,10 +6,6 @@
   <h3 align="center">Ogi Darma Tena</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/odtmusisi19/ogidarmatena.git"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="ogidarmatena.vercel.app/" target="_blank">View Demo</a>
   </p>
