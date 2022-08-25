@@ -7,7 +7,7 @@
 
   <p align="center">
     <br />
-    <a href="ogidarmatena.vercel.app/" target="_blank">View Demo</a>
+  * [View Demo](ogidarmatena.vercel.app/)
   </p>
 </p>
 ## About The Project
